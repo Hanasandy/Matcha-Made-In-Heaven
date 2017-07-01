@@ -1,16 +1,85 @@
+* { padding: 0; margin: 0; }
+html, body, #fullheight {
+    min-height: 100% !important;
+    height: 100vh;
+}
 
-{
+.app {
 	margin: 0 px;
 	padding: 0 px;
+
+height: 100%;
+    width: 100%;
 }
 
-.header_title
-{
- margin-top: 20 px;
- margin-bottom: 20 px;
+.home {
+	background-image: url("../images/latte.jpg");
+	/*background-size: cover;*/
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    display:inline-block;
 }
 
-.head_description
-{
- text-align: center;
+.opener,
+.opener1,
+.opener2 {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 60px;
+    color: #74fd2f;
+    opacity: .5;
+}
+
+.opener1 {
+    margin-left: 10%;
+}
+
+.opener2 {
+    margin-left: 20%;
+}
+
+.welcome {
+    background-color: #74fd2f;
+    opacity: .4;
+    width: 25%;
+    border-radius: 100px;
+    height: 70px;
+    margin-top: 110px;
+    padding: 20px;
+    font-family: 'Kaushan Script', cursive;
+    font-size: 36px;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.welcome:hover span {
+    opacity: .9;
+    padding-right: 25px;
+}
+
+.welcome:hover span:after {
+    opacity: .9;
+    right: 5;
+}
+
+.welcome span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.welcome span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
 }
