@@ -35,7 +35,6 @@ app.get("/", function(req, res) {
 
 
 
-
 var socketio = require('socket.io');
 var io = socketio.listen(serverMan);
 /*
