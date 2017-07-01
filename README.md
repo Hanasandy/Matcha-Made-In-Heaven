@@ -1,1 +1,2 @@
 # Matcha-Made-In-Heaven
+E-shop website based on ReactJS. Purpose of website is to provide user with information and product information of Matcha powder. The website will contain shopping cart for potential purchases. Store info in MongoDB.
