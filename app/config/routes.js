@@ -17,8 +17,7 @@ const routes = (
         <Route path = "/Main" component = {Main} /> 
         <Route path = "/Contact" component = {Contact} />
         <Route path = "/Products" component = {Products} /> 
-        <Route path = "/Cart" component = {Cart} /> 
- 
+        <Route path = "/Cart" component = {Cart} />
           
      </Router>
   

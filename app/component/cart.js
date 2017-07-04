@@ -1,46 +1,30 @@
 import React from "react";
-import { Modal, Button } from 'antd';
+import Header from "./section/header.js";
 
+class Cart extends React.Component{
+  render(){ 
+         return(
+           <div>
 
-var Cart = React.createClass({
-  getInitialState: function() {
-    return {
-     visible: true 
-    };
-  },
+            <Header SelectedMenu="Contact"/>
 
-  handleOk: function(e) {
-   this.setState({
-      visible: false,
-    });  
+               <h2> Cart </h2>
+               
+           </div>
 
-  },
+         );
+ 
+    }
 
-  handleCancel: function(e) {
-   this.setState({
-      visible: false,
-    });  
-
+} 
   
-  },
 
-  render: function() {
-    return (
-      <div>
-        <Modal
-          title="Products choosen"
-          visible={this.state.visible}
-          onOk={this.handleOk}
-          onCancel={this.handleCancel}
-        >
-          <p>Some contents...</p>
-          <p>Some contents...</p>
-          <p>Some contents...</p>
-        </Modal>
-      </div>
-    );
-  }
-});
 
-module.exports = Cart
 
+
+
+
+
+
+
+export default Cart;
