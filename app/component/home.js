@@ -9,11 +9,12 @@ class Home extends React.Component{
 		       <h1 className="opener">A Matcha</h1>
     		   <h1 className="opener1">Made in</h1>
     		   <h1 className="opener2">Heaven</h1>
-    		   <button className="welcome" type="button"><span>Welcome</span></button>
-		       
+    		   <a href="#/Main" target="_blank">
 
-		        
-		           
+                 <button className="welcome" type="button" ><span>Welcome</span></button>
+
+               </a>
+		       
 		       </div>
 
 		     );
