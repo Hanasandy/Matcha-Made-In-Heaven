@@ -5,6 +5,7 @@ import Home from "../component/home.js";
 import Main from "../component/main.js";
 import Contact from "../component/contact.js";
 import Products from "../component/product.js";
+import Cart from "../component/cart.js";
 
 
 
@@ -16,6 +17,7 @@ const routes = (
         <Route path = "/Main" component = {Main} /> 
         <Route path = "/Contact" component = {Contact} />
         <Route path = "/Products" component = {Products} /> 
+        <Route path = "/Cart" component = {Cart} /> 
  
           
      </Router>

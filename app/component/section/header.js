@@ -2,14 +2,13 @@ import React from "react";
 import { Menu, Icon } from "antd";
 const SubMenu = Menu.SubMenu;
 const MenuItemGroup = Menu.ItemGroup;
-import Link from "react-router";
 
 
 
 var Header = React.createClass({
   getInitialState: function() {
     return {
-     current: "mail"
+     current: "Main"
     };
   },
 
@@ -30,6 +29,10 @@ var Header = React.createClass({
         <Menu.Item key="Products">
           <a href="#/Products" target="_blank"><Icon type="shopping-cart" />Products</a>
         </Menu.Item>
+
+        <Menu.Item key="Cart">
+          <a href="#/Cart"><Icon type="credit-card" />Cart</a>
+        </Menu.Item>
         
         <Menu.Item key="Contact">
           <a href="#/Contact" target="_blank"><Icon type="phone" />Contact Us</a>
@@ -38,6 +41,8 @@ var Header = React.createClass({
         <Menu.Item key="alipay">
           <a href="https://ant.design" target="_blank" rel="noopener noreferrer">Navigation Four - Link</a>
         </Menu.Item>
+
+
       </Menu>
     );
   }
