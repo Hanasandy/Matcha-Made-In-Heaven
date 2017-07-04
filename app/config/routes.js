@@ -4,6 +4,8 @@ import {  Router , Route , hashHistory} from "react-router";
 import Home from "../component/home.js";
 import Main from "../component/main.js";
 import Contact from "../component/contact.js";
+import Products from "../component/product.js";
+
 
 
 const routes = (
@@ -12,7 +14,9 @@ const routes = (
 
         <Route path = "/" component = {Home} /> 
         <Route path = "/Main" component = {Main} /> 
-        <Route path = "/Contact" component = {Contact} /> 
+        <Route path = "/Contact" component = {Contact} />
+        <Route path = "/Products" component = {Products} /> 
+ 
           
      </Router>
   

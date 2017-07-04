@@ -26,6 +26,10 @@ var Header = React.createClass({
         <Menu.Item key="Main">
            <a href="#/Main" target="_blank"><Icon type="layout" /> Main </a>
         </Menu.Item>
+
+        <Menu.Item key="Products">
+          <a href="#/Products" target="_blank"><Icon type="shopping-cart" />Products</a>
+        </Menu.Item>
         
         <Menu.Item key="Contact">
           <a href="#/Contact" target="_blank"><Icon type="phone" />Contact Us</a>
