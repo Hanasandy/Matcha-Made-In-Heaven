@@ -17,6 +17,7 @@
     "express": "^4.15.3",
     "mongodb": "^2.2.29",
     "mongoose": "^4.10.8",
+    "morgan": "^1.8.2",
     "react": "^15.4.1",
     "react-dom": "^15.4.1",
     "react-router": "^3.0.0",

@@ -41,25 +41,35 @@ var Header = React.createClass({
   render: function() {
     return (
       <div>
-      <Menu onClick={this.handleClick} selectedKeys={[this.state.current]} mode="horizontal">
-        <Menu.Item key="Main">
-           <a href="#/Main" target="_blank"><Icon type="layout" /> Main </a>
-        </Menu.Item>
+      <Menu onClick={this.handleClick} selectedKeys={[this.state.current]} mode="horizontal" className="menu">
+                               
+    
 
-        <Menu.Item key="Products">
-          <a href="#/Products"><Icon type="shopping-cart" />Products</a>
-        </Menu.Item>
+         <SubMenu title={<span><Icon type="setting" key="Main" />Info</span>}>
+          
+            <Menu.Item key="setting:1">What is Matcha</Menu.Item>
+            <Menu.Item key="setting:2">Health Benefits</Menu.Item>
+            <Menu.Item key="setting:3">Recipes</Menu.Item>
+        </SubMenu>
         
+
+         <SubMenu title={<span><Icon type="setting" key="Main" />Products</span>}>
+          
+            <Menu.Item key="setting:1">View All Products</Menu.Item>
+            
+        </SubMenu>
+
+
         <Menu.Item key="Contact">
           <a href="#/Contact"><Icon type="phone" />Contact Us</a>
         </Menu.Item>
 
         <Menu.Item key="alipay">
-          <a href="https://ant.design" target="_blank" rel="noopener noreferrer">Navigation Four - Link</a>
+          <a href="https://ant.design" target="_blank" rel="noopener noreferrer">Register/Login</a>
         </Menu.Item>
 
         <Menu.Item key="Cart">
-          <a href="#/Cart"  >Crat</a>
+          <a href="#/Cart"  >Cart</a>
         </Menu.Item>
 
       </Menu>

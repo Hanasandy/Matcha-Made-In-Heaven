@@ -5,16 +5,17 @@ html, body, #fullheight {
 }
 
 .app {
-	margin: 0 px;
-	padding: 0 px;
+    margin: 0 px;
+    padding: 0 px;
+    font-family: 'Indie Flower', cursive;
 
 height: 100%;
     width: 100%;
 }
 
 .home {
-	background-image: url("../images/latte.jpg");
-	/*background-size: cover;*/
+    background-image: url("../images/latte.jpg");
+    /*background-size: cover;*/
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
@@ -32,7 +33,12 @@ height: 100%;
     font-size: 60px;
     color: #74fd2f;
     opacity: .5;
+/*    margin-top: 10%;*/
 }
+
+/*.opener {
+    margin-left: 10%;
+}*/
 
 .opener1 {
     margin-left: 10%;
@@ -48,7 +54,8 @@ height: 100%;
     width: 25%;
     border-radius: 100px;
     height: 70px;
-    margin-top: 110px;
+    margin-top: 20%;
+    margin-left: 2%;
     padding: 20px;
     font-family: 'Kaushan Script', cursive;
     font-size: 36px;
@@ -83,3 +90,61 @@ height: 100%;
     right: -20px;
     transition: 0.5s;
 }
+.menu
+{
+ font-family: 'Indie Flower', cursive;
+}
+
+.menu a {
+    display: block;
+    text-align: center;
+    width: 135px;
+    /* fixed width */
+    text-decoration: none;
+    color: black;
+    line-height: 18px;
+    display: inline-block;
+    margin-left: 5px;
+    padding-left: 15px;
+    border-left: 1px solid #efefef;
+    letter-spacing: 0;
+    border: 0px;
+    margin-left: 
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: white;
+}
+
+.footer {
+    text-align: center;
+    padding: 30px 0;
+    clear: both;
+    color: black;
+    font-size: 20px;
+    background: #f3f2e7;
+    margin-top:500px;
+    font-family: 'Indie Flower', cursive;
+    font-size: 20px;
+}
+

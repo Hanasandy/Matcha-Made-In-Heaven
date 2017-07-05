@@ -11,14 +11,14 @@ var CartSchema = new Schema({
   },
   user: [{
     type: Schema.Types.ObjectId,
-    ref: "User"
+    ref: "Users"
   }],
   product: [{
     type: Schema.Types.ObjectId,
-    ref: "Product"
+    ref: "Products"
   }],
 });
 
-var Cart = mongoose.model("Cart", CartSchema);
+var Carts = mongoose.model("Carts", CartSchema);
 
-module.exports = Cart;
+module.exports = Carts;

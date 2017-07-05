@@ -16,7 +16,7 @@ var ProductSchema = new Schema({
     type: String,
     require: true
   },
-  image:{
+  Image:{
     type: String,
     require:true
   }
@@ -24,7 +24,7 @@ var ProductSchema = new Schema({
 });
 
 // Create the Model
-var Product = mongoose.model("Product", ProductSchema);
+var Products = mongoose.model("Products", ProductSchema);
 
 // Export it for use elsewhere
-module.exports = Product;
+module.exports = Products;
