@@ -47,15 +47,15 @@ var Header = React.createClass({
 
          <SubMenu title={<span><Icon type="setting" key="Main" />Info</span>}>
           
-            <Menu.Item key="setting:1">What is Matcha</Menu.Item>
-            <Menu.Item key="setting:2">Health Benefits</Menu.Item>
-            <Menu.Item key="setting:3">Recipes</Menu.Item>
+            <Menu.Item key="What"><a href="#/What">What is Matcha</a></Menu.Item>
+            <Menu.Item key="Health"><a href="#/Health">Health Benefits</a></Menu.Item>
+            <Menu.Item key="Recipes"><a href="#/Recipes">Recipes</a></Menu.Item>
         </SubMenu>
         
 
          <SubMenu title={<span><Icon type="setting" key="Main" />Products</span>}>
           
-            <Menu.Item key="setting:1">View All Products</Menu.Item>
+            <Menu.Item key="Product"><a href="#/Product">View All Products</a></Menu.Item>
             
         </SubMenu>
 
