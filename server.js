@@ -9,7 +9,7 @@ var carts = require("./models/carts");
 var products = require("./models/products");
 var users = require("./models/users");
 
-
+var smodule = require("./socketmodule.js");
 
 //var routes = require("./routes/routes");
 //var socket = require("socket.io");
@@ -42,9 +42,10 @@ app.use(express.static("./public"));
 
 // MongoDB configuration (Change this URL to your own DB)
 //mongoose.connect("mongodb://localhost/e-shop");
-//mongoose.connect("mongodb://localhost/Matcha");
+mongoose.connect("mongodb://localhost/Matcha");
 //mongoose.connect("mongodb://heroku_q76pl7q0:4k75boumo23e8m1o05i18red1s@ds151062.mlab.com:51062/heroku_q76pl7q0");
-mongoose.connect(process.env.MONGODB_URI || "mongodb://heroku_q76pl7q0:4k75boumo23e8m1o05i18red1s@ds151062.mlab.com:51062/heroku_q76pl7q0");
+//mongoose.connect(process.env.MONGODB_URI || "mongodb://heroku_rsl43tx1:hd17lonv50hobpc3465u5u8spm@ds129402.mlab.com:29402/heroku_rsl43tx1");
+
 
 var db = mongoose.connection;
 
@@ -84,7 +85,7 @@ io.sockets.on('connection', function(socket){
 
 
 
-	socket.on('message', function(message) {
+  socket.on('message', function(message) {
        
            // logger.log('info',message.value);
             console.log(message);
@@ -101,4 +102,4 @@ io.sockets.on('connection', function(socket){
  });   
  */
 // Start the server
-//io.sockets.on('connection', smodule);
+io.sockets.on('connection', smodule);
