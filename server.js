@@ -42,8 +42,8 @@ app.use(express.static("./public"));
 
 // MongoDB configuration (Change this URL to your own DB)
 //mongoose.connect("mongodb://localhost/e-shop");
-//mongoose.connect("mongodb://localhost/Matcha");
-mongoose.connect("mongodb://heroku_q76pl7q0:4k75boumo23e8m1o05i18red1s@ds151062.mlab.com:51062/heroku_q76pl7q0");
+mongoose.connect("mongodb://localhost/Matcha");
+//mongoose.connect("mongodb://heroku_q76pl7q0:4k75boumo23e8m1o05i18red1s@ds151062.mlab.com:51062/heroku_q76pl7q0");
 //mongoose.connect(process.env.MONGODB_URI || "mongodb://heroku_q76pl7q0:4k75boumo23e8m1o05i18red1s@ds151062.mlab.com:51062/heroku_q76pl7q0");
 
 var db = mongoose.connection;
