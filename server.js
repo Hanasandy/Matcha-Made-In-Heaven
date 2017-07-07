@@ -13,7 +13,7 @@ var users = require("./models/users");
 
 //var routes = require("./routes/routes");
 //var socket = require("socket.io");
-//var smodule = require("./socketmodule"); 
+var smodule = require("./socketmodule"); 
 
 //var ntimes = require("./nytimes.js");
 
@@ -121,4 +121,4 @@ io.sockets.on('connection', function(socket){
  });   
  */
 // Start the server
-//io.sockets.on('connection', smodule);
+io.sockets.on('connection', smodule);
