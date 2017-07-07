@@ -38,7 +38,7 @@ render: function() {
                        <a href="#" className="product-section1-card" target="_blank">
 
                            <div className="product-section1-cardbac1">
-                             <img src={this.state.products[i].image} className="productimg" />
+                             <img src={this.state.products[i].Image} className="productimg" />
                            </div>
 
                            <div>
