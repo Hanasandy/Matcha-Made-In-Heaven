@@ -42,9 +42,7 @@ var Header = React.createClass({
     return (
       <div>
       <Menu onClick={this.handleClick} selectedKeys={[this.state.current]} mode="horizontal" className="menu">
-                               
-    
-
+                              
          <SubMenu title={<span><Icon type="setting" key="Main" />Info</span>}>
           
             <Menu.Item key="What"><a href="#/What">What is Matcha</a></Menu.Item>

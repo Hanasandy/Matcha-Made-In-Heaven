@@ -5,10 +5,10 @@ html, body, #fullheight {
 }
 
 .app {
-    margin: 0 px;
-    padding: 0 px;
-    font-family: 'Indie Flower', cursive;
 
+    margin: 0 px;
+    padding: 0 px; 
+    font-family: 'Indie Flower', cursive;
 height: 100%;
     width: 100%;
 }
@@ -36,9 +36,7 @@ height: 100%;
 /*    margin-top: 10%;*/
 }
 
-/*.opener {
-    margin-left: 10%;
-}*/
+
 
 .opener1 {
     margin-left: 10%;
@@ -105,12 +103,50 @@ height: 100%;
     line-height: 18px;
     display: inline-block;
     margin-left: 5px;
-    padding-left: 15px;
+    padding-left: 20%;
+
+
     border-left: 1px solid #efefef;
     letter-spacing: 0;
     border: 0px;
-    margin-left: 
+     
 }
+
+
+
+.shopping {
+    margin: 0;
+    padding: 0 70px;
+    position: relative;
+    display: block;
+    white-space: nowrap;
+}
+
+.products {
+    margin: 0;
+    padding: 0 70px;
+    position: relative;
+    display: block;
+    white-space: nowrap;
+}
+
+
+.contact {
+    margin: 0;
+    padding: 0 70px;
+    position: relative;
+    display: block;
+    white-space: nowrap;
+}
+
+.log {
+    margin: 0;
+    padding: 0 70px;
+    position: relative;
+    display: block;
+    white-space: nowrap;
+}
+
 
 .dropdown-content {
     display: none;
@@ -135,6 +171,62 @@ height: 100%;
 .dropdown:hover .dropbtn {
     background-color: white;
 }
+
+
+.header {
+    font-family: 'Indie Flower', cursive;
+    vertical-align: top;
+    text-align: center;
+    padding: 10px;
+    font-size: 300%;
+}
+
+
+.carousel {
+  text-align: center;
+  height: 20%;
+  line-height: 160px;
+  background: #364d79;
+  color: #fff;
+  overflow: hidden;
+}
+
+.myImages {
+    width:20%; 
+    max-height:20%;
+}
+
+.intro {
+    background: #f3f2e7;
+    margin-top: 10%;
+}
+
+.intro-matcha {
+    margin-left: 15px;
+    font-family: 'Indie Flower', cursive;
+    text-decoration: underline;
+    margin-left: 450px;
+}
+
+.intro-mat {
+    text-align: left;
+    text-indent: 40px;
+    font-family: 'Indie Flower', cursive;
+    font-size: 27px;
+    padding-left: 30px;
+    padding-right: 30px;
+    width: 500px;
+    float: left;
+    margin-top: 50px;
+}
+
+.video {
+    margin-bottom: 400px;
+    margin-top: 60px;
+    float: right;
+    margin-right: 20px;
+}
+
 
 .footer {
     text-align: center;
