@@ -8,6 +8,7 @@ import Cart from "../component/cart.js";
 import What from "../component/whatismatcha.js";
 import Recipes from "../component/recipes.js";
 import Health from "../component/healthbenefits.js";
+import CreateProduct from "../component/createproduct.js"
 
 const routes = (
   
@@ -21,6 +22,7 @@ const routes = (
         <Route path = "/Recipes" component = {Recipes} />
         <Route path = "/Health" component = {Health} />
         <Route path = "/Cart" component = {Cart} />
+        <Route path = "/CreateProduct" component = {CreateProduct} />
           
      </Router>
   

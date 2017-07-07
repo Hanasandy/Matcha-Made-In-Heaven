@@ -5,7 +5,6 @@ const SubMenu = Menu.SubMenu;
 const MenuItemGroup = Menu.ItemGroup;
 
 
-
 var Header = React.createClass({
   getInitialState: function() {
     return {
@@ -17,60 +16,51 @@ var Header = React.createClass({
   handleClick: function(e) {
     console.log('click ', e);
     this.setState({
-      current: e.key,
-      
+      current: e.key,    
     });
-    },
+  },
 
   handleOk: function(e) {
    this.setState({
       visible: false,
     });  
-
   },
 
   handleCancel: function(e) {
    this.setState({
       visible: false,
-    });  
-
-  
+    });    
   },
 
-  
   render: function() {
     return (
       <div>
       <Menu onClick={this.handleClick} selectedKeys={[this.state.current]} mode="horizontal" className="menu">
-                               
-    
-
-         <SubMenu title={<span><Icon type="setting" key="Main" />Info</span>}>
+                              
+         <SubMenu title={<span className="whatIs"><Icon type="info-circle" key="Main" />Info</span>}>
           
-            <Menu.Item key="What"><a href="#/What">What is Matcha</a></Menu.Item>
+            <Menu.Item key="WhatIs"><a href="#/What">What is Matcha</a></Menu.Item>
             <Menu.Item key="Health"><a href="#/Health">Health Benefits</a></Menu.Item>
             <Menu.Item key="Recipes"><a href="#/Recipes">Recipes</a></Menu.Item>
         </SubMenu>
         
-
-         <SubMenu title={<span><Icon type="setting" key="Main" />Products</span>}>
+         <SubMenu title={<span className="products"><Icon type="shop" key="Main" />Products</span>}>
           
             <Menu.Item key="Product"><a href="#/Product">View All Products</a></Menu.Item>
             
         </SubMenu>
 
+        <SubMenu title={<span className="contact"><Icon type="phone" key="Main" />Contact</span>}>
+          
+        </SubMenu>
 
-        <Menu.Item key="Contact">
-          <a href="#/Contact"><Icon type="phone" />Contact Us</a>
-        </Menu.Item>
+        <SubMenu title={<span className="log"><Icon type="login" key="Main" />Login/Register</span>}>
+          
+        </SubMenu>
 
-        <Menu.Item key="alipay">
-          <a href="https://ant.design" target="_blank" rel="noopener noreferrer">Register/Login</a>
-        </Menu.Item>
-
-        <Menu.Item key="Cart">
-          <a href="#/Cart"  >Cart</a>
-        </Menu.Item>
+        <SubMenu title={<span className= "shopping"><Icon type="shopping-cart" key="Main" />Cart</span>}>
+     
+        </SubMenu>
 
       </Menu>
       
