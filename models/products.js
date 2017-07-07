@@ -16,7 +16,7 @@ var ProductSchema = new Schema({
     type: String,
     require: true
   },
-  Image:{
+  image:{
     type: String,
     require:true
   }

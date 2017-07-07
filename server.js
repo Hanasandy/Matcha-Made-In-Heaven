@@ -73,6 +73,26 @@ app.get("/api", function(req, res) {
   });
 });
 
+app.post("/api", function(req, res) {
+
+  console.log("BODY: " + req.body.Name);
+
+  
+  products.create({
+    Name: req.body.Name,
+    Desc: req.body.Desc,
+    Price:req.body.Price,
+    image:req.body.Image
+  }, function(err) {
+    if (err) {
+      console.log(err);
+    }
+    else {
+      res.send("Saved Search");
+    }
+  });
+});
+
 var socketio = require('socket.io');
 var io = socketio.listen(serverMan);
 /*
