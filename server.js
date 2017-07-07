@@ -13,7 +13,7 @@ var users = require("./models/users");
 
 //var routes = require("./routes/routes");
 //var socket = require("socket.io");
-//var smodule = require("./socketmodule"); 
+var smodule = require("./socketmodule"); 
 
 //var ntimes = require("./nytimes.js");
 
@@ -41,7 +41,11 @@ app.use(express.static("./public"));
 //app.use("/api", apiRoutes);
 
 // MongoDB configuration (Change this URL to your own DB)
-mongoose.connect("mongodb://localhost/e-shop");
+//mongoose.connect("mongodb://localhost/e-shop");
+mongoose.connect("mongodb://localhost/Matcha");
+//mongoose.connect("mongodb://heroku_q76pl7q0:4k75boumo23e8m1o05i18red1s@ds151062.mlab.com:51062/heroku_q76pl7q0");
+//mongoose.connect(process.env.MONGODB_URI || "mongodb://heroku_rsl43tx1:hd17lonv50hobpc3465u5u8spm@ds129402.mlab.com:29402/heroku_rsl43tx1");
+
 var db = mongoose.connection;
 
 db.on("error", function(err) {
@@ -97,4 +101,4 @@ io.sockets.on('connection', function(socket){
  });   
  */
 // Start the server
-//io.sockets.on('connection', smodule);
+io.sockets.on('connection', smodule);
