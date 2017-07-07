@@ -13,7 +13,7 @@ var smodule = require("./socketmodule.js");
 
 //var routes = require("./routes/routes");
 //var socket = require("socket.io");
-var smodule = require("./socketmodule"); 
+//var smodule = require("./socketmodule.js"); 
 
 //var ntimes = require("./nytimes.js");
 
