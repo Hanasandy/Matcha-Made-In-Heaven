@@ -13,7 +13,7 @@ var smodule = require("./socketmodule.js");
 
 //var routes = require("./routes/routes");
 //var socket = require("socket.io");
-//var smodule = require("./socketmodule"); 
+var smodule = require("./socketmodule"); 
 
 //var ntimes = require("./nytimes.js");
 
@@ -46,7 +46,6 @@ mongoose.connect("mongodb://localhost/Matcha");
 //mongoose.connect("mongodb://heroku_q76pl7q0:4k75boumo23e8m1o05i18red1s@ds151062.mlab.com:51062/heroku_q76pl7q0");
 //mongoose.connect(process.env.MONGODB_URI || "mongodb://heroku_rsl43tx1:hd17lonv50hobpc3465u5u8spm@ds129402.mlab.com:29402/heroku_rsl43tx1");
 
-
 var db = mongoose.connection;
 
 db.on("error", function(err) {
@@ -74,6 +73,26 @@ app.get("/api", function(req, res) {
 
     else {
       res.send(doc);
+    }
+  });
+});
+
+app.post("/api", function(req, res) {
+
+  console.log("BODY: " + req.body.Name);
+
+  
+  products.create({
+    Name: req.body.Name,
+    Desc: req.body.Desc,
+    Price:req.body.Price,
+    image:req.body.Image
+  }, function(err) {
+    if (err) {
+      console.log(err);
+    }
+    else {
+      res.send("Saved Search");
     }
   });
 });
