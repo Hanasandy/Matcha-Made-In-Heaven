@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "./section/header.js";
 import Footer from "./section/footer.js";
+import { Carousel } from 'antd';
 
 
 class Main extends React.Component{
@@ -9,12 +10,8 @@ class Main extends React.Component{
 		       <div>
 
 		       	<Header SelectedMenu="Main"/>
-		           <h2> MainPage </h2>
-		        <Footer/>
-
-
+		        
 		           <h1 className="header"> A Matcha Made in Heaven </h1>
-
 
 		           <Carousel autoplay className="carousel">
     					<div className= "myImages">
@@ -28,7 +25,6 @@ class Main extends React.Component{
     					</div>		
   					</Carousel>
 
-
 		           <div className="intro">
             	   		<h1 className="intro-matcha">Introducing Matcha</h1>
             				<p className="intro-mat">
@@ -40,22 +36,9 @@ class Main extends React.Component{
 
 		         <Footer /> 
 
-
 		       </div>
-
 		     );
- 
     }
-
 } 
   
-
-
-
-
-
-
-
-
-
 export default Main;
