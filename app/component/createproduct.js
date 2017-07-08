@@ -3,8 +3,9 @@ import helpers from "./utils/helpers.js";
 
 //var CreateProduct = React.createClass({
 class CreateProduct extends React.Component {
-	constructor(props) {
+  constructor(props) {
     super(props);
+
     this.state = {
       Name:"",
       Desc:"",
@@ -17,51 +18,48 @@ class CreateProduct extends React.Component {
   }
 
   handleChange(event) {
-    this.setState({
-
-    	Name: event.target.Name,
-    	Desc: event.target.Desc,
-    	Price: event.target.Price,
-    	Image: event.target.Image,
-
-    });
+    
+    var newState = {};
+    newState[event.target.id] = event.target.value;
+    this.setState(newState);
   }
 
   handleSubmit(event) {
-    alert('An essay was submitted: ' + this.state.Name);
-    event.preventDefault();
+    alert('An essay was submitted: ' + this.state.value);
     helpers.saveProducts({ 
       Name: this.state.Name,
       Desc: this.state.Desc,
-      Price: this.state.NamePrice,
+      Price: this.state.Price,
       Image: this.state.Image})
 
         .then(function() {
           console.log("Posted to MongoDB");
+
         });
+                  console.log("name :" + this.state.Name);
+
   }
 
-	render(){	
-		     return(
+  render(){ 
+         return(
 
-		       <div>
+           <div>
+
 
 		           <h2> Create Product </h2>
 		           <form onSubmit={this.handleSubmit}>
-                     Name:<input type="text" value={this.state.Name} onChange={this.handleChange} />
-                     Price:<input type="text" value={this.state.Price} onChange={this.handleChange} />
-                     Image:<input type="text" value={this.state.Image} onChange={this.handleChange} />
-                     Desc:<textarea value
-                     ={this.state.Desc} onChange={this.handleChange} />
+                     Name:<input type="text" id="Name"   value={this.state.Name } onChange={this.handleChange} />
+                     Price:<input type="text" id="Price" value={this.state.Price } onChange={this.handleChange} />
+                     Image:<input type="text" id="Image" value={this.state.Image } onChange={this.handleChange} />
+                     Desc:<textarea id="Desc" value={this.state.Desc } onChange={this.handleChange} />
 
                      <input type="submit" value="Submit" />
                    </form>
-		       </div>
+           </div>
 
-		     );
+         );
  
     }
 
 } 
 export default CreateProduct;
-
