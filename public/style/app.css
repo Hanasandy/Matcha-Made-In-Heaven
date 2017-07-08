@@ -224,3 +224,30 @@ html, body, #fullheight {
     margin-top:500px;
     font-family: 'Indie Flower', cursive;
 }
+
+/* ------------product.js--------------*/
+
+.productimg{
+    width: 85%;
+    height: 85%;
+    align-items: center;
+}
+
+.product-card{
+    padding: 10px;
+    float: left;
+    margin: 20px;
+    text-decoration-color: #696969;
+}
+
+.produt-container{
+    margin: 20px; 
+}
+
+.productButton{
+    margin-left: 20px;
+    width: 140px;
+    height: 30px;
+    background-color: #3cb371;
+    opacity: 0.6;
+}
