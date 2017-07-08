@@ -11,7 +11,8 @@ render: function() {
 
            <div>
              <Header SelectedMenu="Recipes"/>
-             	<div className="jumbotron text center" style="background: #f3f2e7">
+             	<div className="jumbotron text center">         
+             	// style="background: #f3f2e7">
             		<h2 className="recipe-menu">Matcha Recipes</h2>
         		</div>
         		
