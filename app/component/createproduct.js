@@ -45,8 +45,9 @@ class CreateProduct extends React.Component {
 
            <div>
 
-               <h2> Create Product </h2>
-               <form onSubmit={this.handleSubmit}>
+
+		           <h2> Create Product </h2>
+		           <form onSubmit={this.handleSubmit}>
                      Name:<input type="text" id="Name"   value={this.state.Name } onChange={this.handleChange} />
                      Price:<input type="text" id="Price" value={this.state.Price } onChange={this.handleChange} />
                      Image:<input type="text" id="Image" value={this.state.Image } onChange={this.handleChange} />
