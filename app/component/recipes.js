@@ -21,7 +21,7 @@ render: function() {
                 		<h2>Matcha Pancakes</h2>
                 	</div>
                 	<div className="image">
-                    	<img className="img" src="assets/images/pancakes.jpg" />
+                    	<img className="img" src="../images/pancakes.jpg" />
                     </div>
  					<div className="ingredients">               
                 		<h2>Ingredients:</h2>
@@ -49,7 +49,7 @@ render: function() {
                 		<h2>Matcha Green Tea Smoothie</h2>
                 	</div>
                 	<div className="image">
-                    	<img className="img" src="assets/images/smoothie.jpg" />
+                    	<img className="img" src="../images/smoothie.jpg" />
                 	</div>
                 	<div className="ingredients">
                 		<h2>Ingredients:</h2>
@@ -73,7 +73,7 @@ render: function() {
                     	<h2>Green Tea White Chocolate Brownies</h2>
                     </div>
                     <div className="image">
-                        <img className="img" src="assets/images/brownie.jpg" />
+                        <img className="img" src="../images/brownie.jpg" />
                     </div>
                     <div className="ingredients">
                     	<h2>Ingredients:</h2>
