@@ -9,19 +9,10 @@ var carts = require("./models/carts");
 var products = require("./models/products");
 var users = require("./models/users");
 
-<<<<<<< HEAD
-var smodule = require("./socketmodule.js");
-
-//var routes = require("./routes/routes");
-//var socket = require("socket.io");
-//var smodule = require("./socketmodule.js"); 
-=======
-
 //var routes = require("./routes/routes");
 //var socket = require("socket.io");
 var smodule = require("./socketmodule.js"); 
 var authRoutes = require("./controller/loginControl.js");
->>>>>>> development
 
 
 // Set up a default port, configure mongoose, configure our middleware
