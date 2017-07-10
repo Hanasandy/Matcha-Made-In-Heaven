@@ -1,8 +1,6 @@
+
 // Include React
 var React = require("react");
-
-
-
 
 var registerp = React.createClass({
 
@@ -95,9 +93,7 @@ var registerp = React.createClass({
 
         <div className="row">
 
-
           <div className="jumbotron">
-            
 
           <form onSubmit={this.handleSubmit}>
             <div className="form-group">
