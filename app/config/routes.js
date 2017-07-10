@@ -9,13 +9,19 @@ import What from "../component/whatismatcha.js";
 import Recipes from "../component/recipes.js";
 import Health from "../component/healthbenefits.js";
 import CreateProduct from "../component/createproduct.js"
+import input from "../component/querypro.js";
+import loginr from "../component/loginp/loginr.js";
 
 const routes = (
   
      <Router  history = {hashHistory}>
 
         <Route path = "/" component = {Home} /> 
+        
+        <Route path = "/regi" component = {loginr} />
         <Route path = "/Main" component = {Main} /> 
+        <Route path = "/input" component = {input} />
+         
         <Route path = "/Contact" component = {Contact} />
         <Route path = "/Product" component = {Product} /> 
         <Route path = "/What" component = {What} />

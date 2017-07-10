@@ -10,12 +10,11 @@ var products = require("./models/products");
 var users = require("./models/users");
 
 
-
 //var routes = require("./routes/routes");
 //var socket = require("socket.io");
 var smodule = require("./socketmodule.js"); 
+var authRoutes = require("./controller/loginControl.js");
 
-//var ntimes = require("./nytimes.js");
 
 // Set up a default port, configure mongoose, configure our middleware
 var PORT = process.env.PORT || 8000;
@@ -36,6 +35,8 @@ app.use(bodyParser.text());
 app.use(bodyParser.json({ type: "application/vnd.api+json" }));
 
 app.use(express.static("./public"));
+app.use("/login", authRoutes);
+
 //app.use("/", routes);
 //var apiRoutes = require("./rrouter");
 //app.use("/api", apiRoutes);
@@ -96,6 +97,14 @@ app.post("/api", function(req, res) {
     }
   });
 });
+
+app.get("/api/re", function(req, res) {
+
+    res.send("/login/rego");
+
+  
+});
+
 
 var socketio = require('socket.io');
 var io = socketio.listen(serverMan);
