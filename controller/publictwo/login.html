@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+<head>
+	<meta charset="UTF-8">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	 
+
+		<title>Hambuger</title>
+	</head>
+	<body>
+		
+		   <div class="container">
+          <div class= 'row'>
+                     <div class = "col-md-12" Id = "UserChoose" > 
+                     Login (More Than 10 Alphabet For Password and Username) 
+                     </div> 
+                    
+          </div>
+
+           <div class= 'row'>
+                     <div class = "col-md-6" Id = "additionMM" >
+                     </div>
+                     
+
+
+                     <div class = "col-md-6" Id = "soso" >
+                    </div>
+                    
+          </div>
+
+
+
+           <div class= 'row'>
+                     <div class = "col-md-12" Id = "addition" >
+                     
+                    
+          </div>
+
+          <div class= 'row'>
+
+					      <div class="form-group">
+
+		                <label for="Product">ID</label>
+
+		                <input type="text" class="form-control" id="Quan">
+
+                    <label for="Product">PASSWORD</label>
+
+                    <input type="text" class="form-control" id="Xman">
+
+                   
+
+		               
+                 </div>
+
+					</div>
+          <div class = "row">
+          					 
+                     <button type="submit" class="btn btn-default" id="heelo"><i class="fa fa-search"></i> login</button>
+                     <button type="submit" class="btn btn-default" id="gogo"><i class="fa fa-search"></i> register</button>
+                     <button type="submit" class="btn btn-default" id="mainman"><i class="fa fa-search"></i> Main</button>
+
+                     
+          </div>
+            
+				      
+		    </div>
+    
+    
+	  <script>  
+
+             window.onload = function(){
+
+
+                let sendC = {
+                   user : "hi"
+                }
+
+                $.ajax({
+                          method : 'patch',            
+     
+                          url: '/login/getcookie',
+                 
+                          data : sendC
+                 
+                 
+                          }).then(function(data){
+                           if(data == "true"){
+                               window.location.replace("/#/Main");
+
+                           }
+
+                });
+
+
+
+
+
+             } 
+
+
+               $("#mainman").on("click", function(event) {
+                  window.location.replace("/#/Main");
+ 
+
+
+               }); 
+            
+              
+
+              
+
+               $("#heelo").on("click", function(event) {
+                   var userd =  $("#Quan").val().trim();
+                   var pass =  $("#Xman").val().trim();
+                 
+                   var sendValue = {
+                     user :   userd,
+                     password : pass
+                   }
+                   
+                   $.ajax({
+                   method : 'post',            
+   
+                   url: '/login/search',
+               
+                   data : sendValue
+               
+               
+                   }).then(function(datas){
+                   console.log(datas.result);
+                       if(datas.result == "success"){
+                          var sendC ={
+                             user : datas.username
+                          }
+                          $.ajax({
+                          method : 'post',            
+     
+                          url: '/login/cookie',
+                 
+                          data : sendC
+                 
+                 
+                          }).then(function(data){
+                           window.location.replace(data);
+
+
+
+                       });
+                    }else{
+
+                       res.send("fail process");
+                    }
+                    
+
+                
+                   }); 
+
+
+                  
+              });
+
+
+              $("#gogo").on("click", function(event) {
+                   
+                   
+                   $.ajax({
+                   method : 'get',            
+   
+                   url: '/api/re'
+               
+              
+               
+               
+                   }).then(function(data){
+                    window.location.replace(data);
+                 
+                     
+
+                
+                   }); 
+
+              });
+
+              
+
+
+
+
+             
+   
+     
+             
+           
+            
+
+
+
+
+      </script>
+	</body>
+</html>

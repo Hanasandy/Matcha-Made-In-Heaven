@@ -3,6 +3,7 @@ import Header from "./section/header.js";
 import Footer from "./section/footer.js";
 import helpers from "./utils/helpers.js";
 import { InputNumber } from 'antd';
+import { Row, Col } from 'antd';
 
 
 
@@ -33,42 +34,49 @@ render: function() {
     var indents = [];
     for (var i = 0; i < this.state.products.length; i++) {
       indents.push(
-            <div className="product-section1-box" key={i}>   
+        　
+                <div key={i}>  
 
-                       <a href="#" className="product-section1-card" target="_blank">
-
-                           <div className="product-section1-cardbac1">
+                  
+                    <Col span={8}>
+                      <div className="produt-container">
+                           <div>
                              <img src={this.state.products[i].Image} className="productimg" />
                            </div>
 
                            <div>
-                                   <h2>Product Name:{this.state.products[i].Name}</h2>
+                                   <h3><b>Product Name:{this.state.products[i].Name}</b></h3>
                                    <div>Desc:{this.state.products[i].Desc}</div>
-                                   <div>Price:{this.state.products[i].Price}</div>
+                                   <div><b>Price:{this.state.products[i].Price}</b></div>
                                    <div>Quantity
-                                    <InputNumber min={1} max={10} defaultValue={1} onChange={this.onChange} />
+                                    <InputNumber min={1} max={50} defaultValue={3} onChange={this.onChange} />
+                                    <button type="button" className="productButton">Add to cart</button>
                                    </div>
-                                   <button>Add to cart</button>
+                                   
                            </div>
-                       </a>
-                       
-                   </div>        );
-     }  
+                       </div>      
+                     </Col>
+                  
+                                             
+                </div>         
+
+      );
+    }  
     return (
+      <div>
+        <Header SelectedMenu="Products"/>
+        <h1 className="header"> A Matcha Made in Heaven </h1>
+        <div className="container">
+            <Row>
 
-      <div className="product-section1">
-              <Header SelectedMenu="Products"/>
-              <h1> Products </h1>
 
+                {indents}
+                  
+                    
 
-              {indents}
-                
-                   
-               
-             
-            <Footer/>
-
-	       </div>
+  	        </Row> 
+        </div>
+      </div>  
 
 		     );
  
