@@ -15,8 +15,10 @@ render: function() {
 
            <div>
              <Header SelectedMenu="Health"/>
+              <h1 className="header"> A Matcha Made in Heaven </h1>
                 
-            <div class="jumbotron text center" style="background: #f3f2e7">
+            <div class="jumbotron text center">
+            //style=background: #f3f2e7">
             	<h2 class="about">What are the health benefits?</h2>
             </div>
             <div class="health-benefits">
@@ -29,7 +31,7 @@ render: function() {
                     	<li>Is rich in fiber, chlorophyll and vitamins and lowers cholesterol and blood sugar</li>
                     	<li>Detoxifies effectively and naturally</li>
                 	</ul>
-                    <img class="images" src="assets/images/health.jpg" />
+                    <img class="images" src="../images/health.jpg" />
             </div>
              
              <Footer/>

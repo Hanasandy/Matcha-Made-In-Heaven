@@ -65,6 +65,7 @@ render: function() {
     return (
       <div>
         <Header SelectedMenu="Products"/>
+        <h1 className="header"> A Matcha Made in Heaven </h1>
         <div className="container">
             <Row>
 

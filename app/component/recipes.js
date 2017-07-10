@@ -11,6 +11,7 @@ render: function() {
 
            <div>
              <Header SelectedMenu="Recipes"/>
+              <h1 className="header"> A Matcha Made in Heaven </h1>
              	<div className="jumbotron text center">         
              	// style="background: #f3f2e7">
             		<h2 className="recipe-menu">Matcha Recipes</h2>
