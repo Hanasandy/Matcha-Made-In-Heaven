@@ -34,6 +34,8 @@ class Cart extends React.Component{
          return(
            <div>
 
+            <h1 className="header"> A Matcha Made in Heaven </h1>
+
             <Header SelectedMenu="Contact"/>
 
                <h2> Cart </h2>

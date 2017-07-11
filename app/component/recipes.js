@@ -3,6 +3,7 @@ import Header from "./section/header.js";
 import Footer from "./section/footer.js";
 
 
+
 var Recipes = React.createClass({
 
 render: function() {
@@ -10,9 +11,12 @@ render: function() {
     return (
 
            <div>
+
+            <h1 className="header"><a href="#/main"> A Matcha Made in Heaven</a></h1>
+
              <Header SelectedMenu="Recipes"/>
-             	<div className="jumbotron text center">         
-             	// style="background: #f3f2e7">
+             	<div>         
+             	
             		<h2 className="recipe-menu">Matcha Recipes</h2>
         		</div>
         		
@@ -20,8 +24,8 @@ render: function() {
             		<div className="pancakes">
                 		<h2>Matcha Pancakes</h2>
                 	</div>
-                	<div className="image">
-                    	<img className="img" src="../images/pancakes.jpg" />
+                	<div className="image-food">
+                    	<img className="img-recipe" src="../images/pancakes.jpg" alt="pancakes"/>
                     </div>
  					<div className="ingredients">               
                 		<h2>Ingredients:</h2>
@@ -48,8 +52,8 @@ render: function() {
             		<div className="smoothie">
                 		<h2>Matcha Green Tea Smoothie</h2>
                 	</div>
-                	<div className="image">
-                    	<img className="img" src="../images/smoothie.jpg" />
+                	<div className="image-food">
+                    	<img className="img-recipe" src="../images/smoothie.jpg" />
                 	</div>
                 	<div className="ingredients">
                 		<h2>Ingredients:</h2>
@@ -72,8 +76,8 @@ render: function() {
                 	<div className="brownies">
                     	<h2>Green Tea White Chocolate Brownies</h2>
                     </div>
-                    <div className="image">
-                        <img className="img" src="../images/brownie.jpg" />
+                    <div className="image-food">
+                        <img className="img-recipe" src="../images/brownie.jpg" />
                     </div>
                     <div className="ingredients">
                     	<h2>Ingredients:</h2>
