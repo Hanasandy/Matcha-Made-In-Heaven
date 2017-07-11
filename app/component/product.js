@@ -55,8 +55,8 @@ render: function() {
                            </div>
 
                            <div>
-                                   <h3><b>Product Name:{this.state.products[i].Name}</b></h3>
-                                   <div>Desc:{this.state.products[i].Desc}</div>
+                                   <h3><b>{this.state.products[i].Name}</b></h3>
+                                   <div>{this.state.products[i].Desc}</div>
                                    <div><b>Price:{this.state.products[i].Price}</b></div>
                                    <div>Quantity
                                     <InputNumber min={1} max={50} defaultValue={3} onChange={this.onChange} />
