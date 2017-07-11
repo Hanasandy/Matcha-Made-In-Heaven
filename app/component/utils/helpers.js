@@ -5,7 +5,7 @@ module.exports = {
     return axios.get("/api");
   },
   
-  saveProducts: function(productData) {
-    return axios.post("/api", productData);
-  }
+  // saveProducts: function(productData) {
+  //   return axios.post("/api", productData);
+  // }
 };

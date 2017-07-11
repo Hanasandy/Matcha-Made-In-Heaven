@@ -18,10 +18,12 @@ render: function() {
             <h1 className="header"><a href="#/main"> A Matcha Made in Heaven</a></h1>
 
              <Header SelectedMenu="Health"/>
+              <h1 className="header"> A Matcha Made in Heaven </h1>
                 
+
             <div>
             	<h2 className="about-health">the health benefits of matcha</h2>
-            </div>
+
             <div className="health-benefits">
                 <h2 className="health-header"><b>Among its many health benefits, matcha...</b></h2>
                 	<ul className="health-list">
@@ -31,7 +33,9 @@ render: function() {
                     	<li>Provides vitamin C, selenium, chromium, zinc and magnesium and is rich in fiber, chlorophyll and vitamins which helps lowers cholesterol and blood sugar</li>
                     	
                 	</ul>
+
                     <img className="images-health" src="../images/matcha-health.png" />
+
             </div>
 
             <div className="health-images">

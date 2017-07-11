@@ -18,6 +18,7 @@ render: function() {
               <h1 className="header"><a href="#/main"> A Matcha Made in Heaven</a></h1>
 
              <Header SelectedMenu=""/>
+              <h1 className="header"> A Matcha Made in Heaven </h1>
 
                 <div className="jumbotron text center">
             		<h2 className="about">What is Matcha?</h2>
