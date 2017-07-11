@@ -1,5 +1,6 @@
 import React from "react";
 import Header from "./section/header.js";
+import Footer from "./section/footer.js";
 
 class Home extends React.Component{
 	render(){	

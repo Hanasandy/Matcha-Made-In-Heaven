@@ -1,4 +1,6 @@
 import React from "react";
+import Header from "./section/header.js";
+import Footer from "./section/footer.js";
 
 import axios from "axios";
 

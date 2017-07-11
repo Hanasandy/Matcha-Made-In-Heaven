@@ -11,7 +11,8 @@ html, body, #fullheight {
     height: 100%;
     width: 100%;
 }
-/*----------------home.js----------*/
+
+/*---------- home.js ---------*/
 .home {
     background-image: url("../images/latte.jpg");
     /*background-size: cover;*/
@@ -85,7 +86,8 @@ html, body, #fullheight {
     right: -20px;
     transition: 0.5s;
 }
-/*-----------------   */
+
+/*---------- ## ----------*/
 .menu {
     font-family: 'Indie Flower', cursive;
 }
@@ -105,7 +107,7 @@ html, body, #fullheight {
     border: 0px;     
 }
 
-/*--------header.js-------*/
+/*---------- header.js ----------*/
 .header {
     font-family: 'Indie Flower', cursive;
     vertical-align: top;
@@ -171,7 +173,7 @@ html, body, #fullheight {
     background-color: white;
 }
 
-/*--------------Main.js------------*/
+/*---------- Main.js ---------*/
 .carousel {
   text-align: center;
   height: 10%;
@@ -222,7 +224,7 @@ html, body, #fullheight {
     margin-right: 20px;
 }
 
-/*-----------footer.js-------*/
+/*---------- footer.js ----------*/
 .footer {
     text-align: center;
     padding: 30px 0;
@@ -234,7 +236,7 @@ html, body, #fullheight {
     font-family: 'Indie Flower', cursive;
 }
 
-/* ------------product.js--------------*/
+/*------------ product.js --------------*/
 .productimg{
     width: 85%;
     height: 85%;
@@ -259,3 +261,6 @@ html, body, #fullheight {
     background-color: #3cb371;
     opacity: 0.6;
 }
+
+/*---------- contact.js ----------/*
+
