@@ -55,18 +55,18 @@ class add extends React.Component{
          console.log(this.state.test);
             if(this.state.test == "true"){
 
-<<<<<<< HEAD
+             <Header SelectedMenu="Contact"/>
             <h1 className="header"> A Matcha Made in Heaven </h1>
 
-            <Header SelectedMenu="Contact"/>
-=======
+           
+           
            return(
              <div>
                  <button  id="logout"  onClick= {() => {this.logout()}}>logout</button>  
                  <h2> login success! </h2>
                   
              </div>
->>>>>>> 6d3cffa3a9426f3333d4faf683f827aeb4eb6e1f
+
 
            );
         }else{

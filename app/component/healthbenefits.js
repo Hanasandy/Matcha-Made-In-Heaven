@@ -42,6 +42,7 @@ render: function() {
                 <img className="image1" src="../images/matcha-benefits.png" />
                 <img className="image3" src="../images/matcha-tea.png" />
              </div>
+            </div>
              <Footer/>
 
 	       </div>

@@ -108,7 +108,7 @@ render: function() {
                     		</ol>
                 	</div>
             	</div>
-
+            </div>
              <Footer/>
 
 	       	</div>
