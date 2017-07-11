@@ -6,17 +6,27 @@ import { InputNumber } from 'antd';
 import { Row, Col } from 'antd';
 
 
-
 var Product = React.createClass({
 
  onChange: function(value) {
   console.log('changed', value);
   }
-,
+  ,
 	getInitialState: function() {
     return { selectedItem:[], products: [] };
-  },
+  }
+  ,
+  intialzie : function(data){
 
+    if(data.length == 0){
+      console.log("empty");
+      }else{
+      this.setState({products : data}); 
+      console.log(this.state.products);
+     }
+
+  } 
+  , 
 	componentDidMount: function() {
     // Get the latest history.
     helpers.getProducts().then(function(response) {
@@ -45,8 +55,8 @@ render: function() {
                            </div>
 
                            <div>
-                                   <h3><b>Product Name:{this.state.products[i].Name}</b></h3>
-                                   <div>Desc:{this.state.products[i].Desc}</div>
+                                   <h3><b>{this.state.products[i].Name}</b></h3>
+                                   <div>{this.state.products[i].Desc}</div>
                                    <div><b>Price:{this.state.products[i].Price}</b></div>
                                    <div>Quantity
                                     <InputNumber min={1} max={50} defaultValue={3} onChange={this.onChange} />
