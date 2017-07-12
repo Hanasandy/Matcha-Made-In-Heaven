@@ -46,7 +46,7 @@ var Header = React.createClass({
         
          <SubMenu title={<span className="products"><Icon type="shop" key="Main" />Products</span>}>
           
-            <Menu.Item key="Product"><a href="#/Product">View All Products</a></Menu.Item>
+            <Menu.Item key="Product"><a href="#/AllProducts">View All Products</a></Menu.Item>
             
         </SubMenu>
 
