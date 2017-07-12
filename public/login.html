@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+<head>
+	<meta charset="UTF-8">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	 
+
+		<title>Hambuger</title>
+	</head>
+	<body>
+		
+		   <div class="container">
+          <div class= 'row'>
+                     <div class = "col-md-12" Id = "UserChoose" > See Cart
+                     </div> 
+                    
+          </div>
+
+           <div class= 'row'>
+                     <div class = "col-md-6" Id = "additionMM" >
+                     </div>
+                     
+
+
+                     <div class = "col-md-6" Id = "soso" >
+                    </div>
+                    
+          </div>
+
+
+
+           <div class= 'row'>
+                     <div class = "col-md-12" Id = "addition" >
+                     
+                    
+          </div>
+
+          <div class= 'row'>
+
+					      <div class="form-group">
+
+		                <label for="Product">ID</label>
+
+		                <input type="text" class="form-control" id="Quan">
+
+                    <label for="Product">PASSWORD</label>
+
+                    <input type="text" class="form-control" id="xman">
+
+                   
+
+		               
+                 </div>
+
+					</div>
+          <div class = "row">
+          					 <button type="submit" class="btn btn-default" id="run-search"><i class="fa fa-search"></i> Creation</button>
+                     <button type="submit" class="btn btn-default" id="heelo"><i class="fa fa-search"></i> login</button>
+                     <button type="submit" class="btn btn-default" id="gogo"><i class="fa fa-search"></i> register</button>
+                     
+          </div>
+            
+				      
+		    </div>
+    <script src="socket.io/socket.io.js"></script>
+    
+	  <script> 
+            
+              var socketsMan = io.connect(); 
+
+              $("#run-search").on("click", function(event) {
+                   
+                   
+                   $.ajax({
+                   method : 'get',            
+   
+                   url: '/api/clear'
+               
+              
+               
+               
+                   }).then(function(data){
+                    window.location.replace(data);
+                 
+                     
+
+                
+                   }); 
+
+              });
+
+               $("#heelo").on("click", function(event) {
+                  var receiverAnswer =  $("#Quan").val().trim();
+                  console.log(receiverAnswer );
+                   var sendValue = {
+                     user :   receiverAnswer 
+                   }
+                   
+                   $.ajax({
+                   method : 'post',            
+   
+                   url: '/api/cookie',
+               
+                   data : sendValue
+               
+               
+                   }).then(function(data){
+                   console.log(data);
+                   window.location.replace(data);
+                    
+
+                
+                   }); 
+
+
+                  
+              });
+
+
+              $("#gogo").on("click", function(event) {
+                   
+                   
+                   $.ajax({
+                   method : 'get',            
+   
+                   url: '/api/re'
+               
+              
+               
+               
+                   }).then(function(data){
+                    window.location.replace(data);
+                 
+                     
+
+                
+                   }); 
+
+              });
+
+              
+
+
+
+
+               socketsMan.on('returnval', function(message) {
+                  window.location.replace(message);
+                   
+                  
+               
+              });
+        
+ 
+   
+     
+             
+           
+            
+
+
+
+
+      </script>
+	</body>
+</html>

@@ -1,3 +1,4 @@
+// Include React
 var express = require("express");
 var mongoose = require("mongoose");
 var bluebird = require("bluebird");
@@ -10,12 +11,11 @@ var products = require("./models/products");
 var users = require("./models/users");
 
 
-
 //var routes = require("./routes/routes");
 //var socket = require("socket.io");
 var smodule = require("./socketmodule.js"); 
+var authRoutes = require("./controller/loginControl.js");
 
-//var ntimes = require("./nytimes.js");
 
 // Set up a default port, configure mongoose, configure our middleware
 var PORT = process.env.PORT || 8000;
@@ -36,13 +36,15 @@ app.use(bodyParser.text());
 app.use(bodyParser.json({ type: "application/vnd.api+json" }));
 
 app.use(express.static("./public"));
+app.use("/login", authRoutes);
+
 //app.use("/", routes);
 //var apiRoutes = require("./rrouter");
 //app.use("/api", apiRoutes);
 
 // MongoDB configuration (Change this URL to your own DB)
-//mongoose.connect("mongodb://localhost/e-shop");
-mongoose.connect("mongodb://localhost/Matcha");
+mongoose.connect("mongodb://localhost/e-shop");
+//mongoose.connect("mongodb://localhost/Matcha");
 //mongoose.connect("mongodb://heroku_q76pl7q0:4k75boumo23e8m1o05i18red1s@ds151062.mlab.com:51062/heroku_q76pl7q0");
 //mongoose.connect(process.env.MONGODB_URI || "mongodb://heroku_rsl43tx1:hd17lonv50hobpc3465u5u8spm@ds129402.mlab.com:29402/heroku_rsl43tx1");
 
@@ -96,6 +98,14 @@ app.post("/api", function(req, res) {
     }
   });
 });
+
+app.get("/api/re", function(req, res) {
+
+    res.send("/login/rego");
+
+  
+});
+
 
 var socketio = require('socket.io');
 var io = socketio.listen(serverMan);
