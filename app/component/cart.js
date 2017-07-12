@@ -1,6 +1,7 @@
 import React from "react";
-
 import axios from "axios";
+import Header from "./section/header.js";
+import Footer from "./section/footer.js";
 
 
 
@@ -55,20 +56,33 @@ class add extends React.Component{
          console.log(this.state.test);
             if(this.state.test == "true"){
 
+            
+            
+
            return(
-             <div>
+            <div>
+            <h1 className="header"><a href="#/main"> A Matcha Made in Heaven</a></h1>
+
+             <Header SelectedMenu={"Contact"}/>
+          
                  <button  id="logout"  onClick= {() => {this.logout()}}>logout</button>  
                  <h2> login success! </h2>
                   
              </div>
+
 
            );
         }else{
            return(
             <div>
                  <h2> login fail!</h2>
+
+                 <Footer/>
                   
              </div>
+
+
+
            );  
 
         }

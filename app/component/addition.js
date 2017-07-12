@@ -1,4 +1,6 @@
-mport React from "react";
+import React from "react";
+import Header from "./section/header.js";
+import Footer from "./section/footer.js";
 
 
 

@@ -14,31 +14,40 @@ render: function() {
     return (
 
            <div>
+
+            <h1 className="header"><a href="#/main"> A Matcha Made in Heaven</a></h1>
+
              <Header SelectedMenu="Health"/>
-              <h1 className="header"> A Matcha Made in Heaven </h1>
+              
                 
-            <div class="jumbotron text center">
-            //style=background: #f3f2e7">
-            	<h2 class="about">What are the health benefits?</h2>
+
+            <div>
+                <h2 className="about-health">The Health Benefits of Matcha</h2>
+
+            <div className="health-benefits">
+                <h2 className="health-header"><b>Among its many health benefits, matcha...</b></h2>
+                    <ul className="health-list">
+                        <li>-Is packed with antioxidants which detoxifies effectively and naturally</li>
+                        <li>-Boosts metabolism and burns calories</li>
+                        <li>-Calms the mind and relaxes the body and also enhances mood and aids in concentration</li>
+                        <li>-Provides vitamin C, selenium, chromium, zinc and magnesium and is rich in fiber, chlorophyll and vitamins which helps lowers cholesterol and blood sugar</li>
+                        
+                    </ul>
+
+                    <img className="images-health" src="../images/matcha-health.png" />
+
             </div>
-            <div class="health-benefits">
-                <h2><b>Among its many health benefits, matcha...</b></h2>
-                	<ul>
-                    	<li>Is packed with antioxidants including the powerful EGCg</li>
-                    	<li>Boosts metabolism and burns calories</li>
-                    	<li>Calms the mind and relaxes the body and also enhances mood and aids in concentration</li>
-                    	<li>Provides vitamin C, selenium, chromium, zinc and magnesium</li>
-                    	<li>Is rich in fiber, chlorophyll and vitamins and lowers cholesterol and blood sugar</li>
-                    	<li>Detoxifies effectively and naturally</li>
-                	</ul>
-                    <img class="images" src="../images/health.jpg" />
+
+            <div className="health-images">
+                <img className="image1" src="../images/matcha-benefits.png" />
+                <img className="image3" src="../images/matcha-tea.png" />
+             </div>
             </div>
-             
              <Footer/>
 
-	       </div>
+           </div>
 
-		);
+        );
     }
 
 });
