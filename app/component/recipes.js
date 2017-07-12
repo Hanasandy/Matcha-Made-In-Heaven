@@ -15,18 +15,21 @@ render: function() {
             <h1 className="header"><a href="#/main"> A Matcha Made in Heaven</a></h1>
 
              <Header SelectedMenu="Recipes"/>
-                       
-                
+             	       
+             	
 
               
-                <div>         
-                
-                    <h2 className="recipe-menu">Matcha Recipes</h2>
-                </div>
-                
-                <div className="recipes">
-                    <div className="pancakes">
-                        <h2>Matcha Pancakes</h2>
+             	<div>         
+             	
+            		<h2 className="recipe-menu">Matcha Recipes</h2>
+        		</div>
+        		
+        		<div className="recipes">
+            		<div className="pancakes">
+                		<h2>Matcha Pancakes</h2>
+                	</div>
+                	<div className="image-food">
+                    	<img className="img-recipe" src="../images/pancakes.jpg" alt="pancakes"/>
                     </div>
                     <div className="image-food">
                         <img className="img-recipe" src="../images/pancakes.jpg" alt="pancakes"/>
@@ -98,16 +101,17 @@ render: function() {
                             </ul>
                     </div>
                     <div className="directions">
-                        <h2>Directions:</h2>
-                            <ol>
-                                <li>Preheat oven at 350. Grease and flour an 8x8 baking pan.</li>
-                                <li>In a large microwave safe bowl, combine the butter and white chocolate and heat at thirty second intervals until melted and smooth. Set aside to cool for about 10 minutes.</li>
-                                <li>Stir in eggs and matcha powder until combined, then add flour, vanilla, and almond extract just until incorporated. Lastly stir in almonds and white chocolate chips.</li>
-                                <li>Pour into prepared pan and spread into even layer. Bake about 20 - 25 minutes or until lightly browned.</li>
-                                <li>Cool in pan on a wire rack. Cut and enjoy.</li>
-                            </ol>
-                    </div>
-                </div>
+
+                    	<h2>Directions:</h2>
+                    		<ol>
+                        		<li>Preheat oven at 350. Grease and flour an 8x8 baking pan.</li>
+                        		<li>In a large microwave safe bowl, combine the butter and white chocolate and heat at thirty second intervals until melted and smooth. Set aside to cool for about 10 minutes.</li>
+                        		<li>Stir in eggs and matcha powder until combined, then add flour, vanilla, and almond extract just until incorporated. Lastly stir in almonds and white chocolate chips.</li>
+                        		<li>Pour into prepared pan and spread into even layer. Bake about 20 - 25 minutes or until lightly browned.</li>
+                        		<li>Cool in pan on a wire rack. Cut and enjoy.</li>
+                    		</ol>
+                	</div>
+            	</div>
            
              <Footer/>
 
