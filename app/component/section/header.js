@@ -50,17 +50,21 @@ var Header = React.createClass({
             
         </SubMenu>
 
-        <Menu.Item key="Contact">
-          <a href="#/Contact"><Icon type="phone" />Contact Us</a>
-        </Menu.Item>
+        <SubMenu title={<span className="contact"><Icon type="phone" key="Main" />Contact Us</span>}>
+            
+        </SubMenu>
 
-        <Menu.Item key="alipay">
-          <a href="/login" target="_blank" rel="noopener noreferrer">Register/Login</a>
-        </Menu.Item>
+        <SubMenu title={<span className="log"><Icon type="login" key="Main" />Register/Login</span>}>
+              
+        </SubMenu>
 
-        <Menu.Item key="Cart">
-          <a href="#/Cart"  >Cart</a>
-        </Menu.Item>
+    
+        <SubMenu title={<span className="products"><Icon type="shopping-cart" key="Main" />Cart</span>}>
+            
+        </SubMenu>
+
+
+        
 
       </Menu>
       

@@ -15,11 +15,11 @@ render: function() {
             <h1 className="header"><a href="#/main"> A Matcha Made in Heaven</a></h1>
 
              <Header SelectedMenu="Recipes"/>
-             	<div>         
+             	       
              	
 
-              <h1 className="header"> A Matcha Made in Heaven </h1>
-             	<div className="jumbotron text center">         
+              
+             	<div>         
              	
             		<h2 className="recipe-menu">Matcha Recipes</h2>
         		</div>
@@ -108,7 +108,7 @@ render: function() {
                     		</ol>
                 	</div>
             	</div>
-            </div>
+           
              <Footer/>
 
 	       	</div>
