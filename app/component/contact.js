@@ -6,6 +6,8 @@ class Contact extends React.Component{
              return(
                <div>
 
+               		 <h1 className="header"><a href="#/main"> A Matcha Made in Heaven</a></h1>
+
                    <Header SelectedMenu="Contact"/>
 
                    <h2> Contact Us </h2>

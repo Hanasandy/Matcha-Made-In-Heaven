@@ -11,32 +11,56 @@ html, body, #fullheight {
     height: 100%;
     width: 100%;
 }
+
+.row-center {
+    font-family: 'Kurale', serif;
+    text-align: center;
+}
+
+p {
+   font-family: 'Kurale', serif; 
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    
+}
+
+a:hover {
+    color: #74fd2f;
+}
 /*----------------home.js----------*/
 .home {
     background-image: url("../images/latte.jpg");
-    /*background-size: cover;*/
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
     height: 100vh;
     width: 100%;
-    margin: 0px;
+    /*margin: 0px;
     padding: 0px;
-    display:inline-block;
+    display:inline-block;*/
 }
 
 .opener,
 .opener1,
 .opener2 {
-    font-family: 'Kaushan Script', cursive;
+    font-family: 'Kurale', serif;
     font-size: 60px;
     color: #74fd2f;
     opacity: .5;
-/*    margin-top: 10%;*/
+
+}
+
+.opener {
+    margin-left: 3%;
+    margin-top: 5%;
 }
 
 .opener1 {
-    margin-left: 10%;
+    margin-left: 15%;
 }
 
 .opener2 {
@@ -47,12 +71,13 @@ html, body, #fullheight {
     background-color: #74fd2f;
     opacity: .4;
     width: 25%;
+    color: black;
     border-radius: 100px;
     height: 70px;
-    margin-top: 20%;
     margin-left: 2%;
+    margin-top: 18%;
     padding: 20px;
-    font-family: 'Kaushan Script', cursive;
+    font-family: 'Kurale', serif;
     font-size: 36px;
     cursor: pointer;
     display: inline-block;
@@ -107,11 +132,18 @@ html, body, #fullheight {
 
 /*--------header.js-------*/
 .header {
-    font-family: 'Indie Flower', cursive;
+    font-family: 'Kurale', serif;
     vertical-align: top;
+    padding-bottom: 10%;
     text-align: center;
     padding: 10px;
     font-size: 300%;
+    word-spacing: 10%;
+    background: #f3f2e7;
+}
+
+.menu {
+    background: #f3f2e7;
 }
 
 .shopping {
@@ -138,6 +170,7 @@ html, body, #fullheight {
     white-space: nowrap;
 }
 
+
 .log {
     margin: 0;
     padding: 0 70px;
@@ -146,6 +179,9 @@ html, body, #fullheight {
     white-space: nowrap;
 }
 
+.whatIs {
+    background: #f3f2e7;
+}
 
 .dropdown-content {
     display: none;
@@ -174,16 +210,22 @@ html, body, #fullheight {
 /*--------------Main.js------------*/
 .carousel {
   text-align: center;
+  margin-top: 10%;
+  
   height: 10%;
   line-height: 100px;
+
   background: #364d79;
   color: #fff;
   overflow: hidden;
 }
 
 .myImages {
-    width:20vh; 
-    max-height:20vh;
+
+    width:5%; 
+    max-height:5%;
+
+    
 }
 
 .myImages1{
@@ -198,26 +240,29 @@ html, body, #fullheight {
 }
 
 .intro-matcha {
-    font-family: 'Indie Flower', cursive;
+    font-family: 'Kurale', serif;
     text-decoration: underline;
     margin-left: 450px;
+    margin-top: 5%;
+    padding: 3%;
+    background: #f3f2e7;
 }
 
 .intro-mat {
     text-align: left;
     text-indent: 40px;
-    /*font-family: 'Indie Flower', cursive;*/
-    font-size: 20px;
+    font-family: 'Kurale', serif;
+    font-size: 27px;
     padding-left: 30px;
     padding-right: 30px;
     width: 50%;
     float: left;
     margin-top: 20px;
+
 }
 
 .video {
-    margin-bottom: 400px;
-    margin-top: 60px;
+    margin-top: 20%;
     float: right;
     margin-right: 20px;
 }
@@ -230,8 +275,135 @@ html, body, #fullheight {
     color: black;
     font-size: 20px;
     background: #f3f2e7;
-    margin-top:500px;
-    font-family: 'Indie Flower', cursive;
+    margin-top: 15%;
+    font-family: 'Kurale', serif;
+}
+
+
+/*---------------recipes.js-----------*/
+.recipe-menu {
+    margin-top: 5%;
+    background: #f3f2e7;
+    text-align: left; 
+    padding: 3%;
+}
+
+.pancakes {
+    margin-top: 10%;
+}
+
+.img-food {
+    width: 10px;
+    height: 10px;
+    float: right;
+}
+
+.ingredients {
+    float: left;
+}
+
+/*------------whatismatcha.js---------*/
+.about {
+    text-transform: lowercase;
+    margin-top: 5%;
+    padding: 3%;
+    background: #f3f2e7;
+    text-align: left;
+}
+
+.image {
+    display: block;
+    text-align: center;
+    margin-bottom: 5%;
+    margin-top: 3%; 
+}
+
+.img {
+    width: 75%;
+    height: 10%;
+}
+
+.row {
+
+   border: 1px solid #E0DCC8;
+   box-sizing: border-box;
+   margin: auto;
+}
+
+.right {
+    float: right;
+}
+
+h2 { 
+    font-size: 36px;
+    font-family: 'Kurale', serif;
+    text-align: center;  
+}
+
+
+p {
+    font-size: 20px;
+    margin-left: 10px;
+    font-family: 'Kurale', serif;
+}
+
+.col-md-4 {
+    padding: 5%;
+}
+
+/*-------------healthbenefits.js--------*/
+
+.about-health {
+    text-transform: lowercase;
+    margin-top: 5%;
+    padding: 3%;
+    background: #f3f2e7;
+    text-align: left;
+}
+
+.health-benefits {
+    font-size: 24px;
+    padding-left: 10px;
+    margin-top: 6%;
+    columns: 2;
+    margin-left: 3%;
+   
+}
+
+.health-header {
+    text-align: left;
+}
+
+.health-list {
+   font-family: 'Kurale', serif; 
+}
+
+.images-health {
+   height: 90%;
+    width: 90%;
+    float: right;
+    margin-right: 7%;
+    margin-top: 3%;
+}
+
+.health-images {
+    columns: 2;
+    margin-top: 4%;
+}
+
+.image1 {
+    height: 100%;
+    width: 100%;
+    margin-left: 5%;
+}
+
+
+.image3 {
+    height: 50%;
+    width:  50%;
+    float: right;
+    margin-right: 6%;
+    margin-bottom: 4%;
 }
 
 /* ------------product.js--------------*/

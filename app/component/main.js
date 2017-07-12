@@ -10,9 +10,11 @@ class Main extends React.Component{
 		     return(
 		       <div>
 
+                 <h1 className="header"><a href="#/main"> A Matcha Made in Heaven</a></h1>
+
 		       	<Header SelectedMenu="Main"/>
 		        
-		           <h1 className="header"> A Matcha Made in Heaven </h1>
+		          
 
 		           <Carousel autoplay className="carousel">
     					<div className= "myImages1">
@@ -35,6 +37,7 @@ class Main extends React.Component{
                 			Brewing <strong>Matcha</strong> involves whisking it into warm water, as opposed to simply steeping. 
                 			Thus, the entire leaf is consumed, carrying with it a more sophisticated flavour profile as well as greater nutritional properties than any other types of tea. 
                 			It is for this reason that <strong>Matcha</strong> has been considered both as a gourmet delicacy as well as a natural panacea of modern times.
+
                 			</p>
             			<div className="video">
                 			<iframe width="560" height="315" src="https://www.youtube.com/embed/Vy6slu-D0v8" frameborder="0" allowfullscreen></iframe>
