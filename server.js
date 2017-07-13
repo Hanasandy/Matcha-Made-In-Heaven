@@ -94,7 +94,7 @@ app.post("/api", function(req, res) {
       console.log(err);
     }
     else {
-      res.send("Saved Search");
+      res.send("Saved");
     }
   });
 });
@@ -105,6 +105,55 @@ app.get("/api/re", function(req, res) {
 
   
 });
+
+app.get("/cart", function(req, res) {
+  Carts.find({}, function(error, doc) {
+    if (error) {
+      console.log(error);
+    }
+    else {
+      res.json(doc);
+    }
+  });
+});
+
+
+app.post("/cart", function(req, res) {
+
+  
+  carts.create({
+    orders: req.body.orders,
+    user: req.body.user,
+    product:req.body.product,
+  }, function(err) {
+    if (err) {
+      console.log(err);
+    }
+    else {
+      res.send("Saved");
+    }
+  });
+});
+
+app.post("/cart/:id", function(req, res) {
+  var newOrder = req.body.orders;
+  var ObjectId = mongoose.Schema.Types.ObjectId;
+
+  console.log(newOrder);
+  console.log(req.params.id);
+
+  
+  carts.findOneAndUpdate({ "product": ObjectId(req.params.id) }, {$set : { "orders": newOrder }}
+  ,function (err) {
+  if (err) {
+      console.log(err);
+    }
+    else {
+      res.send("Update");
+    }
+  });
+});
+
 
 
 var socketio = require('socket.io');
