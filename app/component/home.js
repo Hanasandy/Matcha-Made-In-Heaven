@@ -10,7 +10,7 @@ class Home extends React.Component{
     		   <h1 className="opener1">Made in</h1>
     		   <h1 className="opener2">Heaven</h1>
     		 
-               <button className="welcome" type="button" ><span><a href="#/Main">Welcome</a></span></button>
+               <button className="welcome" type="button" ><span><a className="anchor" href="#/Main">Welcome</a></span></button>
 		       
 		       </div>
 		     );

@@ -258,7 +258,7 @@ a:hover {
     width: 50%;
     float: left;
     margin-top: 50px;
-    padding-bottom: 8%;
+    padding-bottom: 5%
 
 }
 
@@ -295,20 +295,62 @@ a:hover {
     text-align: left;
 }
 
-.pancakes {
+.food {
     margin-top: 10%;
+    text-align: left;
+    margin-left: 3%; 
 }
 
-.img-food {
-    width: 10px;
-    height: 10px;
-    float: right;
+.img-recipe {
+    width: 90%;
+    margin-top: 5%;
+    margin-left: 8%;
+   /* margin: 1px auto;*/
 }
 
-.ingredients {
-    float: left;
+.directions {
+    text-align: center;
+    margin-top: 5%;
 }
 
+li {
+    list-style: none;
+    margin-top: 2%;
+    font-family: 'Kurale', serif;
+    font-size: 14px;
+}
+
+.list-recipe {
+    padding: 1%;
+    font-family: 'Kurale', serif;
+    padding-left: 5%;
+    margin-right: 5%;
+    margin-top: 2%;
+    text-align: center;
+}
+
+.ant-col-offset-8 {
+    margin-left: 28%;
+}
+
+.ant-col-8 {
+    display: block;
+    width: 33.33333333%;
+}
+
+.pancakes {
+    box-sizing: border-box;
+    border: 1px solid #f3f2e7;
+}
+.smoothie {
+    box-sizing: border-box;
+    border: 1px solid #f3f2e7;
+}
+
+.brownie {
+    box-sizing: border-box;
+    border: 1px solid #f3f2e7;
+}
 /*------------whatismatcha.js---------*/
 .about {
     padding: 6%;

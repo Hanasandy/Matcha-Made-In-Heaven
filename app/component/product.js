@@ -3,8 +3,7 @@ import Header from "./section/header.js";
 import Footer from "./section/footer.js";
 import { InputNumber } from 'antd';
 import { Row, Col } from 'antd';
-import Header from "./section/header.js";
-import Footer from "./section/footer.js";
+
 
 class Product extends React.Component {
   
