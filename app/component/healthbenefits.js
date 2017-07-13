@@ -22,17 +22,17 @@ render: function() {
                 
 
             <div>
-            	<h2 className="about-health">The Health Benefits of Matcha</h2>
+                <h2 className="about-health">The Health Benefits of Matcha</h2>
 
             <div className="health-benefits">
                 <h2 className="health-header"><b>Among its many health benefits, matcha...</b></h2>
-                	<ul className="health-list">
-                    	<li>-Is packed with antioxidants which detoxifies effectively and naturally</li>
-                    	<li>-Boosts metabolism and burns calories</li>
-                    	<li>-Calms the mind and relaxes the body and also enhances mood and aids in concentration</li>
-                    	<li>-Provides vitamin C, selenium, chromium, zinc and magnesium and is rich in fiber, chlorophyll and vitamins which helps lowers cholesterol and blood sugar</li>
-                    	
-                	</ul>
+                    <ul className="health-list">
+                        <li>-Is packed with antioxidants which detoxifies effectively and naturally</li>
+                        <li>-Boosts metabolism and burns calories</li>
+                        <li>-Calms the mind and relaxes the body and also enhances mood and aids in concentration</li>
+                        <li>-Provides vitamin C, selenium, chromium, zinc and magnesium and is rich in fiber, chlorophyll and vitamins which helps lowers cholesterol and blood sugar</li>
+                        
+                    </ul>
 
                     <img className="images-health" src="../images/matcha-health.png" />
 
@@ -45,9 +45,9 @@ render: function() {
             </div>
              <Footer/>
 
-	       </div>
+           </div>
 
-		);
+        );
     }
 
 });

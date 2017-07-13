@@ -7,11 +7,12 @@ import {Carousel} from "antd";
 
 
 class Main extends React.Component{
-	render(){	
-		     return(
-		       <div>
+    render(){   
+             return(
+               <div>
 
                  <h1 className="header"><a href="#/main"> A Matcha Made in Heaven</a></h1>
+
 
 		       	<Header SelectedMenu="Main"/>
 		        
@@ -49,6 +50,7 @@ class Main extends React.Component{
 
 		       </div>
 		     );
+]
     }
 } 
   
