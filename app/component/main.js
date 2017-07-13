@@ -22,7 +22,7 @@ class Main extends React.Component{
                             <img src="../images/cup.jpg" alt="cup of matcha" />
                         </div>
                         <div className= "myImages">
-                            <img src="../images/japan.jpg" alt="matcha" />
+                            <img src="../images/fields.jpg" alt="matcha" />
                         </div>
                         <div className= "myImages">
                             <img src="../images/mat.png" alt="powder" />
