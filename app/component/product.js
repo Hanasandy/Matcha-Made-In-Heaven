@@ -4,7 +4,7 @@ import { InputNumber } from 'antd';
 import { Row, Col } from 'antd';
 
 class Product extends React.Component {
-	
+  
  constructor(props) {
     super(props);
     this.state = {
@@ -82,7 +82,7 @@ render()
         </Col>
                   
 
- 	);
+  );
   } 
 }
 

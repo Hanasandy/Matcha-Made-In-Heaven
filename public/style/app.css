@@ -136,10 +136,10 @@ a:hover {
     vertical-align: top;
     padding-bottom: 10%;
     text-align: center;
-    padding: 10px;
     font-size: 300%;
     word-spacing: 10%;
     background: #f3f2e7;
+    padding: 6%;
 }
 
 .menu {
@@ -257,15 +257,22 @@ a:hover {
     padding-right: 30px;
     width: 50%;
     float: left;
-    margin-top: 20px;
+    margin-top: 50px;
 
 }
+
 
 .video {
-    margin-top: 20%;
     float: right;
     margin-right: 20px;
+    margin-bottom: 400px;
+    margin-top: 60px;
+    text-align: right;
 }
+
+
+
+
 
 /*-----------footer.js-------*/
 .footer {
@@ -282,10 +289,9 @@ a:hover {
 
 /*---------------recipes.js-----------*/
 .recipe-menu {
-    margin-top: 5%;
+    padding: 6%;
     background: #f3f2e7;
-    text-align: left; 
-    padding: 3%;
+    text-align: left;
 }
 
 .pancakes {
@@ -304,9 +310,7 @@ a:hover {
 
 /*------------whatismatcha.js---------*/
 .about {
-    text-transform: lowercase;
-    margin-top: 5%;
-    padding: 3%;
+    padding: 6%;
     background: #f3f2e7;
     text-align: left;
 }
@@ -347,16 +351,14 @@ p {
     font-family: 'Kurale', serif;
 }
 
-.col-md-4 {
-    padding: 5%;
+.col-md-24 {
+    padding: 3%;
 }
 
 /*-------------healthbenefits.js--------*/
 
 .about-health {
-    text-transform: lowercase;
-    margin-top: 5%;
-    padding: 3%;
+    padding: 6%;
     background: #f3f2e7;
     text-align: left;
 }
@@ -376,6 +378,7 @@ p {
 
 .health-list {
    font-family: 'Kurale', serif; 
+   margin-top: 3%;
 }
 
 .images-health {

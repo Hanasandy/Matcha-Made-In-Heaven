@@ -47,28 +47,25 @@ class add extends React.Component{
                 <Header SelectedMenu={"Contact"}/>
                 <button  id="logout"  onClick= {() => {this.logout()}}>logout</button>  
                 <h2> login success! </h2>
+                <Footer/>
               </div>
          );
+         
 
-        }else{
+        }
+        else
 
           return(
             <div>
                 <h2> login fail!</h2>
-                <Footer/>
             </div>
 
-         );  
+         ); 
 
-      }
-
- 
-
-  }
 
 }
   
-
+}
 
 
 export default add;
