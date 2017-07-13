@@ -96,15 +96,15 @@ render: function() {
                     
                         <h2>Ingredients:</h2>
                             <ul>
-                                <li>1 cup flour </li>
-                                <li>1/4 sweet matcha powder </li>
-                                <li>6 oz white chocolate </li>
-                                <li>6 tbsp butter </li>
-                                <li>2 eggs </li>
-                                <li>1/2 tsp vanilla</li>
-                                <li>1/4 tsp almond extract </li>
-                                <li>1/2 cup slivered almonds, toasted</li>
-                                <li>1/2 cup white chocolate chips </li>
+                                <li>~1 cup flour </li>
+                                <li>~1/4 sweet matcha powder </li>
+                                <li>~6 oz white chocolate </li>
+                                <li>~6 tbsp butter </li>
+                                <li>~2 eggs </li>
+                                <li>~1/2 tsp vanilla</li>
+                                <li>~1/4 tsp almond extract </li>
+                                <li>~1/2 cup slivered almonds, toasted</li>
+                                <li>~1/2 cup white chocolate chips </li>
                             </ul>
                     </Col>
                     </Row>
