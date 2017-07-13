@@ -5,6 +5,7 @@ import {Carousel} from "antd";
 
 
 
+
 class Main extends React.Component{
 	render(){	
 		     return(
@@ -40,7 +41,7 @@ class Main extends React.Component{
 
                 			</p>
             			<div className="video">
-                			<iframe width="560" height="315" src="https://www.youtube.com/embed/Vy6slu-D0v8" frameBorder="0" allowFullScreen></iframe>
+                			<iframe width="500" height="315" src="https://www.youtube.com/embed/Vy6slu-D0v8" frameBorder="0" allowFullScreen></iframe>
             			</div>
         			</div>
 

@@ -258,6 +258,7 @@ a:hover {
     width: 50%;
     float: left;
     margin-top: 50px;
+    padding-bottom: 8%;
 
 }
 
@@ -265,9 +266,9 @@ a:hover {
 .video {
     float: right;
     margin-right: 20px;
-    margin-bottom: 400px;
-    margin-top: 60px;
     text-align: right;
+    margin-bottom: 5%;
+    padding-top: 15%;
 }
 
 

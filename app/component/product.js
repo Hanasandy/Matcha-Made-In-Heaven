@@ -1,6 +1,8 @@
 import React from "react";
 import { InputNumber } from 'antd';
 import { Row, Col } from 'antd';
+import Header from "./section/header.js";
+import Footer from "./section/footer.js";
 
 class Product extends React.Component {
 	
@@ -18,6 +20,12 @@ render()
   console.log("Hello" + this.props.details);
   let details = this.props.details;
   return(
+
+      <div>
+
+            <h1 className="header"><a href="#/main"> A Matcha Made in Heaven</a></h1>
+
+             <Header SelectedMenu="Products"/>
        <Col span={8}>
                       <div className="produt-container">
                            <div>
@@ -30,13 +38,20 @@ render()
                                    <div><b>Price:{details.Price}</b></div>
                                    <div>Quantity
                                     <InputNumber min={1} max={50} defaultValue={3} onChange={this.onChange} />
-                                    <button  type="button" className="productButton" >Add to cart</button>
+                                    <button type="button" className="productButton" >Add to cart</button>
                                    </div>
                                    
                            </div>
-                       </div>      
-        </Col>
-                  
+                       </div>   
+
+                       
+
+        </Col>     
+
+          </div>
+              
+
+
 
  	);
   } 
