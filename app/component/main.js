@@ -22,10 +22,10 @@ class Main extends React.Component{
                             <img src="../images/cup.jpg" alt="cup of matcha" />
                         </div>
                         <div className= "myImages">
-                            <img src="../images/fields.jpg" alt="matcha" />
+                            <img src="../images/fields.jpg" alt="powder" />
                         </div>
                         <div className= "myImages">
-                            <img src="../images/mat.png" alt="powder" />
+                            <img src="../images/mat.png" alt="matcha" />
                         </div>      
                     </Carousel>
 
@@ -37,9 +37,8 @@ class Main extends React.Component{
                             Unlike any other types of tea, <strong>Matcha</strong> is a finely ground powder made from stone-grinding green tea leaves grown under unique conditions. 
                             Brewing <strong>Matcha</strong> involves whisking it into warm water, as opposed to simply steeping. 
                             Thus, the entire leaf is consumed, carrying with it a more sophisticated flavour profile as well as greater nutritional properties than any other types of tea. 
-                            It is for this reason that <strong>Matcha</strong> has been considered both as a gourmet delicacy as well as a natural panacea of modern times.
-
-                            </p>
+                            It is for this reason that <strong>Matcha</strong> has been considered both as a gourmet delicacy as well as a natural panacea of modern times.</p>
+                        
                         <div className="video">
                             <iframe width="510" height="315" src="https://www.youtube.com/embed/Vy6slu-D0v8" frameBorder="0" allowFullScreen></iframe>
                         </div>

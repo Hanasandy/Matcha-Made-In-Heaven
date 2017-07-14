@@ -23,8 +23,7 @@ p {
 
 a {
     text-decoration: none;
-    color: black;
-    
+    color: black;    
 }
 
 a:hover {
@@ -51,12 +50,10 @@ a:hover {
     font-size: 60px;
     color: #74fd2f;
     opacity: .5;
-
 }
 
 .opener {
     margin-left: 3%;
-   /* margin-top: 5%;*/
    padding-top: 5%;
 }
 
@@ -77,7 +74,6 @@ a:hover {
     height: 70px;
     margin-left: 2%;
     margin-top: 18%;
-    padding: 20px;
     font-family: 'Kurale', serif;
     font-size: 36px;
     cursor: pointer;
@@ -153,7 +149,6 @@ a:hover {
     white-space: nowrap;
 }
 
-
 .log {
     margin: 0;
     padding: 0 70px;
@@ -200,17 +195,6 @@ a:hover {
   overflow: hidden;
 }
 
-/*.myImages {
-    width:60px; 
-    max-height:60px;    
-}*/
-
-/*.myImages1{
-    width: 80%;
-    height: 60%;
-    margin-left: auto;
-    margin-right: auto;
-}*/
 .intro {
     background: #f3f2e7;
     margin-top: 5%;
@@ -236,9 +220,7 @@ a:hover {
     float: left;
     margin-top: 50px;
     padding-bottom: 5%
-
 }
-
 
 .video {
     float: right;
@@ -279,7 +261,6 @@ a:hover {
     margin-top: 5%;
     margin-left: 8%;
     border: 5px solid #f3f2e7;
-   /* margin: 1px auto;*/
 }
 
 .directions {
@@ -316,6 +297,7 @@ li {
     box-sizing: border-box;
     border: 1px solid #f3f2e7;
 }
+
 .smoothie {
     box-sizing: border-box;
     border: 1px solid #f3f2e7;
@@ -345,7 +327,6 @@ li {
 }
 
 .row {
-
    border: 1px solid #E0DCC8;
    box-sizing: border-box;
    margin: auto;
@@ -360,7 +341,6 @@ h2 {
     font-family: 'Kurale', serif;
     text-align: center;  
 }
-
 
 p {
     font-size: 20px;
@@ -385,8 +365,7 @@ p {
     padding-left: 10px;
     margin-top: 6%;
     columns: 2;
-    margin-left: 3%;
-   
+    margin-left: 3%;   
 }
 
 .health-header {
@@ -416,7 +395,6 @@ p {
     width: 100%;
     margin-left: 5%;
 }
-
 
 .image3 {
     height: 50%;
