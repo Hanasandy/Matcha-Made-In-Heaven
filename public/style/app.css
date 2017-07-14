@@ -1,7 +1,7 @@
 * { padding: 0; margin: 0; }
 html, body, #fullheight {
     min-height: 100% !important;
-    height: 100vh;
+    /*height: 100vh;*/
 }
 
 .app {
@@ -56,15 +56,16 @@ a:hover {
 
 .opener {
     margin-left: 3%;
-    margin-top: 5%;
+   /* margin-top: 5%;*/
+   padding-top: 5%;
 }
 
 .opener1 {
-    margin-left: 15%;
+    margin-left: 9%;
 }
 
 .opener2 {
-    margin-left: 20%;
+    margin-left: 15%;
 }
 
 .welcome {
@@ -110,25 +111,7 @@ a:hover {
     right: -20px;
     transition: 0.5s;
 }
-/*-----------------   */
-.menu {
-    font-family: 'Indie Flower', cursive;
-}
 
-.menu a {
-    display: block;
-    text-align: center;
-    width: 135px;
-    text-decoration: none;
-    color: black;
-    line-height: 18px;
-    display: inline-block;
-    margin-left: 5px;
-    padding-left: 20%;
-    border-left: 1px solid #efefef;
-    letter-spacing: 0;
-    border: 0px;     
-}
 
 /*--------header.js-------*/
 .header {
@@ -467,4 +450,11 @@ p {
     height: 30px;
     background-color: #3cb371;
     opacity: 0.6;
+}
+
+/*-------------contact.js-----------*/
+.about-contact {
+    padding: 6%;
+    background: #f3f2e7;
+    text-align: left;
 }
